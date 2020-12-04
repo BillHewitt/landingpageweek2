@@ -211,50 +211,36 @@
       </div>
 
   <!-- Flickity HTML init -->
-  <!-- <div class="carousel space-bottom-lg-0" data-flickity='{ "imagesLoaded": true }'>
+  <div class="carousel space-bottom-lg-0" data-flickity='{ "imagesLoaded": true }'>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/car1.png" alt="car1 Image">
+      <img class="img-fluid" src="/img/car1.png" alt="car1 Image<p> paragraph of car1</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/car2.png" alt="car2 Image">
+      <img class="img-fluid" src="/img/car2.png" alt="car2 Image <p>paragraph of car2</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/car3.png" alt="car3 Image">
+      <img class="img-fluid" src="/img/car3.png" alt="car3 Image <p>paragraph of car3</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image">
+      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image <p>paragraph of carousel4</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel1.png" alt="carousel1 Image">
+      <img class="img-fluid" src="/img/carousel1.png" alt="carousel1 Image <p>paragraph of carousel1</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel2.png" alt="carousel2 Image">
+      <img class="img-fluid" src="/img/carousel2.png" alt="carousel2 Image <p>paragraph of carousel2</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel3.png" alt="carousel3 Image">
+      <img class="img-fluid" src="/img/carousel3.png" alt="carousel3 Image <p>paragraph of carousel3</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image">
+      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image <p>paragraph of carousel4</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image">
+      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image <p>paragraph of carousel4</p>">
     </div>
-    <p class="caption">&nbsp;</p>
-  </div> -->
-
-  <div class="carousel space-bottom-lg-0">
-    <img class="img-fluid" src="/img/car1.png" alt="car1 Image">
-    <img class="img-fluid" src="/img/car2.png" alt="car2 Image">
-    <img class="img-fluid" src="/img/car3.png" alt="car3 Image">
-    <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image">
-    <img class="img-fluid" src="/img/carousel1.png" alt="carousel1 Image">
-    <img class="img-fluid" src="/img/carousel2.png" alt="carousel2 Image">
-    <img class="img-fluid" src="/img/carousel3.png" alt="carousel3 Image">
-    <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image">
-    <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image">
   </div>
-
-  <p class="caption">&nbsp;</p>
+  <p class="caption" style="font-size: 26px;">&nbsp;</p>
 </div>
 
 
@@ -294,19 +280,24 @@
   </script>
 
   <script type="text/javascript">
-      var $carousel = $('.carousel').flickity({
+    var $carousel = $('.carousel').flickity({
       cellSelector: 'img',
       imagesLoaded: true,
-      percentPosition: false
-      });
-      var $caption = $('.caption');
-      // Flickity instance
-      var flkty = $carousel.data('flickity');
+      percentPosition: false,
+    });
 
-      $carousel.on( 'select.flickity', function() {
-      // set image caption using img's alt
-      $caption.text( flkty.selectedElement.alt )
-      });
+    var $caption = $('.caption');
+    // Flickity instance
+    var flkty = $carousel.data('flickity');
+
+    $carousel.on( 'select.flickity', function() {
+      $caption.html( $(flkty.selectedElement)[0].alt)
+    });
+
+    $('.main-carousel').flickity({
+      cellAlign: 'left',
+      contain: true
+    })
   </script>
 
   <!-- JS Plugins Init. -->

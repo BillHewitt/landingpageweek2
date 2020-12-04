@@ -529,6 +529,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  padding-right: 10px;
 }
 
 .img-thumbnail {
@@ -23999,7 +24000,7 @@ a:hover .text-hover-primary {
 
 
 .flickity-page-dots {
-  bottom: -55px !important;
+  bottom: -110px !important;
 }
 
 .flickity-page-dots .dot {
