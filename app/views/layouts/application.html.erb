@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Mo | Mo is a collaboration tool that helps build a high performing team. 
+</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <%= favicon_link_tag '/svg/logos/mo-logo-dblue.svg' %>
+
+  <!-- CSS Implementing Plugins -->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <!-- CSS Front Template -->
+  <%= stylesheet_link_tag    'theme', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+</head>
+<body>
+  <%= yield %>
+  <%= render 'partials/emailsignup' %>
+  <%= render 'partials/footer' %>
+</body>
+</html>
