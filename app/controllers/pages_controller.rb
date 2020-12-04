@@ -47,4 +47,6 @@ class PagesController < ApplicationController
   end
   def foryourcompany
   end
+  def whymo
+  end
 end

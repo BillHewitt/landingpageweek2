@@ -23979,3 +23979,38 @@ a:hover .text-hover-primary {
 
   100% {background: #2a1d43;}
 }
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+
+
+.carousel {
+  background: #fff;
+    height: 100%;
+}
+
+.carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+
+.flickity-page-dots {
+  bottom: -55px !important;
+}
+
+.flickity-page-dots .dot {
+  background: #2a1d43 !important;
+}
+
+
+
+
+
