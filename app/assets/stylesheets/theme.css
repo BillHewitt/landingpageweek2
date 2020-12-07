@@ -529,6 +529,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  padding-right: 10px;
 }
 
 .img-thumbnail {
@@ -23925,7 +23926,7 @@ a:hover .text-hover-primary {
   File for your custom SCSS style
 ------------------------------------*/
 
-#hero { background: url(https://s3.amazonaws.com/uploads.hipchat.com/21309/369069/P3rXUVfLuQGvv7N/bw.jpg) no-repeat center center fixed; 
+#hero { background: url(https://s3.amazonaws.com/uploads.hipchat.com/21309/369069/P3rXUVfLuQGvv7N/bw.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23933,11 +23934,11 @@ a:hover .text-hover-primary {
     }
 
 
-#overlay { 
+#overlay {
   -o-animation: colorcycle 400s infinite;
   -moz-animation: colorcycle 400s infinite;
   -webkit-animation: colorcycle 400s infinite;
-  animation: colorcycle 400s infinite; 
+  animation: colorcycle 400s infinite;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=100);
   -moz-opacity: 1;
@@ -23999,11 +24000,42 @@ a:hover .text-hover-primary {
 
 
 .flickity-page-dots {
-  bottom: -55px !important;
+  bottom: -110px !important;
 }
 
 .flickity-page-dots .dot {
   background: #2a1d43 !important;
+}
+
+/* external css: flickity.css */
+.carousel {
+  background: #fff;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+}
+
+.caption {
+  background: #ddd;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.flickity-page-dots {
+  bottom: -60px;
+}
+
+.flickity-viewport {
+  background-color: #fff !important;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel img {
+    height: 400px;
+  }
 }
 
 

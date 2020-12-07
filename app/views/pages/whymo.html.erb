@@ -159,7 +159,7 @@
 </header>
 <!-- ========== END HEADER ========== -->
 
-<div class="bg-light">  
+<div class="bg-light">
   <div class="container space-top-4 space-bottom-3 space-top-md-4 space-bottom-md-3 space-top-lg-5 space-bottom-lg-4">
       <div class="wow fadeIn" data-wow-duration="2s">
         <div class="mx-lg-auto">
@@ -200,7 +200,7 @@
   </div>
 </div>
 
-<div class="bg-white">  
+<div class="bg-white">
   <div class="container-fluid space-top-3 space-bottom-4 space-top-md-3 space-bottom-md-4 space-top-lg-3 space-bottom-lg-4">
       <div>
         <div class="w-lg-75 text-center mx-lg-auto">
@@ -211,43 +211,37 @@
       </div>
 
   <!-- Flickity HTML init -->
-  <div class="carousel space-bottom-lg-0 wow fadeIn" data-wow-duration="2s" data-flickity='{ "imagesLoaded": true }'>
+<div class="carousel space-bottom-lg-0 wow fadeIn" data-wow-duration="2s" data-flickity='{ "imagesLoaded": true }'>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/car1.png" alt="Image Description">
+      <img class="img-fluid" src="/img/car1.png" alt="car1 Image <p> paragraph of car123123</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/car2.png" alt="Image Description">
+      <img class="img-fluid" src="/img/car2.png" alt="car2 Image <p>paragraph of car2</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/car3.png" alt="Image Description">
+      <img class="img-fluid" src="/img/car3.png" alt="car3 Image <p>paragraph of car3</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel4.png" alt="Image Description">
+      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image <p>paragraph of carousel4</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel1.png" alt="Image Description">
+      <img class="img-fluid" src="/img/carousel1.png" alt="carousel1 Image <p>paragraph of carousel1</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel2.png" alt="Image Description">
+      <img class="img-fluid" src="/img/carousel2.png" alt="carousel2 Image <p>paragraph of carousel2</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel3.png" alt="Image Description">
+      <img class="img-fluid" src="/img/carousel3.png" alt="carousel3 Image <p>paragraph of carousel3</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel4.png" alt="Image Description">
+      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image <p>paragraph of carousel4</p>">
     </div>
     <div class="carousel-cell">
-      <img class="img-fluid" src="/img/carousel4.png" alt="Image Description">
+      <img class="img-fluid" src="/img/carousel4.png" alt="carousel4 Image <p>paragraph of carousel4</p>">
     </div>
   </div>
+  <p class="caption" style="font-size: 26px;">&nbsp;</p>
 </div>
-
-
-
-
-
-
-
 
 
 
@@ -279,11 +273,24 @@
   </script>
 
   <script type="text/javascript">
-          $('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true
-      });
+    var $carousel = $('.carousel').flickity({
+      cellSelector: 'img',
+      imagesLoaded: true,
+      percentPosition: false,
+    });
+
+    var $caption = $('.caption');
+    // Flickity instance
+    var flkty = $carousel.data('flickity');
+
+    $carousel.on( 'select.flickity', function() {
+      $caption.html( $(flkty.selectedElement)[0].alt)
+    });
+
+    $('.main-carousel').flickity({
+      cellAlign: 'left',
+      contain: true
+    })
   </script>
 
   <!-- JS Plugins Init. -->
@@ -545,7 +552,7 @@ wow.init();
 .show-neighbors {
   overflow: hidden;
 
-  .item__third:first-child, 
+  .item__third:first-child,
   .item__third:last-child {
     display: none;
   }
@@ -556,9 +563,9 @@ wow.init();
       margin-left: $fragment_width;
     }
 
-    .carousel-control-prev, 
+    .carousel-control-prev,
     .carousel-control-next {
-      background: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.3);
       width: $fragment_width;
       z-index: 11;  /* .carousel-caption has z-index 10 */
     }
