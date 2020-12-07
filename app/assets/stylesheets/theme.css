@@ -14214,7 +14214,7 @@ button:focus {
 }
 
 .header-white-nav-links:not(.bg-white):not(.js-header-fix-moment) .nav-link:hover {
-  color: #fff;
+  color: #000;
 }
 
 .header-white-nav-links:not(.bg-white):not(.js-header-fix-moment) .dropdown-nav-link,
@@ -14235,7 +14235,7 @@ button:focus {
     color: rgba(255, 255, 255, 0.7);
   }
   .header-white-nav-links-sm:not(.bg-white):not(.js-header-fix-moment) .nav-link:hover {
-    color: #fff;
+    color: #000;
   }
   .header-white-nav-links-sm:not(.bg-white):not(.js-header-fix-moment) .dropdown-nav-link,
   .header-white-nav-links-sm:not(.bg-white):not(.js-header-fix-moment) .btn-text-secondary {
@@ -14272,7 +14272,7 @@ button:focus {
     color: #00d1c4;
   }
   .header-white-nav-links-lg:not(.bg-white):not(.js-header-fix-moment) .nav-link {
-    color: #fff;
+    color: #2a1d43;
   }
   .header-white-nav-links-lg:not(.bg-white):not(.js-header-fix-moment) .nav-link:hover {
     color: #00d1c4;
@@ -14880,7 +14880,7 @@ button:focus {
     border-left: 0.1875rem solid #e7eaf3;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    background-color: #2a1d43;
+    background-color: #fff;
     color: #fff;
   }
   .navbar-expand-lg .dropdown-menu .mega-menu-body {
@@ -15099,6 +15099,17 @@ button:focus {
   .navbar-expand-lg-collapse-block .navbar-collapse {
     display: block !important;
   }
+}
+
+
+@media (max-width: 992px) { .header .nav-link {
+  color: #2a1d43;
+}
+}
+
+@media (max-width: 992px) { .header .nav-link:hover {
+  color: #00d1c4;
+}
 }
 
 /*------------------------------------
@@ -24017,7 +24028,7 @@ a:hover .text-hover-primary {
 .carousel img {
   display: block;
   height: 200px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .caption {
@@ -24054,7 +24065,23 @@ p.caption p {
   }
 }
 
+@media (max-width: 991.98px) {
+.navbar-expand-lg .navbar-nav {
+  border-radius: 4px;
+}
+}
 
+@media screen and (min-width: 991px) {
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #00d1c4;
+}
+
+}
 
 
 
