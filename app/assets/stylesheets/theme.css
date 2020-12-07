@@ -529,7 +529,6 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
-  padding-right: 10px;
 }
 
 .img-thumbnail {
@@ -23984,14 +23983,13 @@ a:hover .text-hover-primary {
 
 
 
-
 .carousel {
   background: #fff;
     height: 100%;
 }
 
 .carousel-cell {
-  width: 50%;
+  width: 70%;
   margin-right: 10px;
   background: #fff;
   border-radius: 5px;
@@ -24000,7 +23998,7 @@ a:hover .text-hover-primary {
 
 
 .flickity-page-dots {
-  bottom: -110px !important;
+  bottom: -140px !important;
 }
 
 .flickity-page-dots .dot {
@@ -24012,16 +24010,34 @@ a:hover .text-hover-primary {
   background: #fff;
 }
 
+.img-fluid .is-selected {
+  padding-right: 10px !important;
+}
+
 .carousel img {
   display: block;
   height: 200px;
+  padding-right: 10px;
 }
 
 .caption {
-  background: #ddd;
+  background: #fff;
   margin: 0;
   padding: 10px;
   text-align: center;
+}
+
+p.caption {
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-family: Mabry Pro Medium;
+  margin-top: 20px;
+}
+
+p.caption p {
+  font-family: "Mabry Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .flickity-page-dots {
@@ -24034,7 +24050,7 @@ a:hover .text-hover-primary {
 
 @media screen and (min-width: 768px) {
   .carousel img {
-    height: 400px;
+    height: 550px;
   }
 }
 
