@@ -24097,5 +24097,9 @@ p.caption p {
 
 }
 
+a.nav-link.active {
+  color: #00d1c4 !important;
+}
+
 
 
