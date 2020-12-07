@@ -7065,6 +7065,14 @@ button.bg-danger:focus {
 }
 
 .bg-light {
+  background-color: #b4bac6 !important;
+}
+
+.bg-lighter {
+  background-color: #e8e8e8 !important;
+}
+
+.bg-lightest {
   background-color: #f5f5f5 !important;
 }
 
@@ -24040,7 +24048,7 @@ p.caption {
   font-size: 1.875rem;
   font-weight: 600;
   font-family: Mabry Pro Medium;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 p.caption p {
@@ -24049,9 +24057,6 @@ p.caption p {
   font-weight: 400;
 }
 
-.flickity-page-dots {
-  bottom: -60px;
-}
 
 .flickity-viewport {
   background-color: #fff !important;
@@ -24059,7 +24064,7 @@ p.caption p {
 
 @media screen and (min-width: 768px) {
   .carousel img {
-    height: 550px;
+    height: 580px;
   }
 }
 
