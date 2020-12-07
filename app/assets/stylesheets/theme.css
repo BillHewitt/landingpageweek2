@@ -13025,7 +13025,7 @@ figure {
 
 svg {
   margin-bottom: -8px;
-  vertical-align: baseline;
+  vertical-align: none;
 }
 
 sup {
