@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get 'pages/foryourteam'
   get 'pages/foryourcompany'
   get 'pages/whymo'
+  get 'pages/features'
   root "pages#home"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

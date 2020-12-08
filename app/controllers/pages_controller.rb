@@ -49,4 +49,6 @@ class PagesController < ApplicationController
   end
   def whymo
   end
+  def features
+  end
 end
