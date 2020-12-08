@@ -24051,6 +24051,8 @@ p.caption p {
   font-family: "Mabry Pro", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  padding-top: 10px;
+
 }
 
 
@@ -24060,7 +24062,7 @@ p.caption p {
 
 @media screen and (min-width: 768px) {
   .carousel img {
-    height: 580px;
+    height: 530px;
   }
 }
 
