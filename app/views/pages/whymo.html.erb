@@ -55,7 +55,7 @@
 <div class="carousel space-bottom-lg-0 wow fadeIn" data-wow-duration="2s" data-flickity='{ "imagesLoaded": true }'>
     <div class="carousel-cell">
       <img class="img-fluid" src="/img/car1.png"
-        alt="Invite your team <p style='width: 500px;margin: 0px auto;'> Getting started with Mo is easy. Just import your tits from x to y Invite your team
+        alt="Invite your team <p style='max-width: 500px;margin: 0px auto;'> Getting started with Mo is easy. Just import your tits from x to y Invite your team
           Getting started with Mo is easy. Just import your tits from x to y Invite your team Getting started</p>">
     </div>
     <div class="carousel-cell">
@@ -234,7 +234,7 @@
 
     $carousel.on( 'select.flickity', function() {
       $caption.html( $(flkty.selectedElement)[0].alt)
-      var height = $('.caption').height() + 85
+      var height = $('.caption').height() + 95
       $(".flickity-page-dots").css("bottom",`-${height}px`);
     });
 
