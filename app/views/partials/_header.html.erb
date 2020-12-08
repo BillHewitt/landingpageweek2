@@ -69,21 +69,19 @@
 
                   <% end %>
 
+                   <% if current_page?(pages_overview_path) -%>
 
-                <% if current_page?(pages_features_path) -%>
+                  <li class="nav-item">
+                    <%= link_to "How it works", pages_overview_path, :class => "nav-link active" %>
+                  </li>
+                
+                  <% else %>
 
-                <li class="nav-item">
-                  <%= link_to "Features", pages_features_path, :class => "nav-link active" %>
-                </li>
+                    <li class="nav-item">
+                      <%= link_to "How it works", pages_overview_path, :class => "nav-link" %>
+                    </li>
 
-                <% else %>
-
-                <li class="nav-item">
-                  <%= link_to "Features", pages_features_path, :class => "nav-link" %>
-                </li>
-
-                <% end %>
-
+                  <% end %>
 
 
                 <% if current_page?(pages_pricing_path) -%>
@@ -107,6 +105,7 @@
                   </a>
                 </li>
                 <!-- End Launch button -->
+
 
               </ul>
             </div>

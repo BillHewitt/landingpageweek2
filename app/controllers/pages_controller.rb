@@ -51,4 +51,12 @@ class PagesController < ApplicationController
   end
   def features
   end
+  def evangelise
+  end
+  def relationships
+  end
+  def valued
+  end
+  def Overview
+  end
 end
