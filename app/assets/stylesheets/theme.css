@@ -24004,14 +24004,14 @@ a:hover .text-hover-primary {
 
 
 .carousel {
-  background: #fff;
+  background: #f5f5f5;
   height: 100%;
 }
 
 .carousel-cell {
   width: 70%;
   margin-right: 10px;
-  background: #fff;
+  background: #f5f5f5;
   border-radius: 8px;
   counter-increment: carousel-cell;
 }
@@ -24023,7 +24023,7 @@ a:hover .text-hover-primary {
 
 /* external css: flickity.css */
 .carousel {
-  background: #fff;
+  background: #f5f5f5;
 }
 
 
@@ -24034,7 +24034,7 @@ a:hover .text-hover-primary {
 }
 
 .caption {
-  background: #fff;
+  background: #f5f5f5;
   margin: 0;
   padding: 10px;
   text-align: center;
@@ -24057,7 +24057,7 @@ p.caption p {
 
 
 .flickity-viewport {
-  background-color: #fff !important;
+  background-color: #f5f5f5 !important;
 }
 
 @media screen and (min-width: 768px) {

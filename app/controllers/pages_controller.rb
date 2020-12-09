@@ -59,4 +59,6 @@ class PagesController < ApplicationController
   end
   def Overview
   end
+  def product
+  end
 end

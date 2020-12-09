@@ -30,6 +30,7 @@ Rails.application.routes.draw do
   get 'pages/valued'
   get 'pages/evangelise'
   get 'pages/relationships'
-  root "pages#home"
+  get 'pages/home'
+  root "pages#product"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
