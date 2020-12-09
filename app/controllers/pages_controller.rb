@@ -61,4 +61,6 @@ class PagesController < ApplicationController
   end
   def product
   end
+  def main
+  end
 end
