@@ -63,4 +63,6 @@ class PagesController < ApplicationController
   end
   def main
   end
+  def mo
+  end
 end

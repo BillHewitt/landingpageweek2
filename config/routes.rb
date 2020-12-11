@@ -32,6 +32,7 @@ Rails.application.routes.draw do
   get 'pages/relationships'
   get 'pages/home'
   get 'pages/product'
+  get 'pages/mo'
   root "pages#main"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
